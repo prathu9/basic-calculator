@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="calci">
+        <h3>Basic Calculator</h3>
+        <input id="display" type="text" name="txt" placeholder="0" ><br>
+        <div class="dialPad">
+            <div>
+                <button class="btn delClear" name="btnClear" onclick= "clearButton()" >clear</button>
+                <button class="btn delClear" name="btnDel" onclick= "deleteButton()" >delete</button>
+            </div>
+            <div>
+            <button class="btn" name="btn9" onclick= "numBtnClicked(9)">9</button>
+            <button class="btn" name="btn8" onclick= "numBtnClicked(8)">8</button>
+            <button class="btn" name="btn7" onclick= "numBtnClicked(7)">7</button>
+            <button class="btn" name="btnAdd" onclick= "optrBtnClicked('+')">+</button>
+            </div>
+            <div>
+            <button class="btn" name="btn6" onclick= "numBtnClicked(6)">6</button>
+            <button class="btn" name="btn5" onclick= "numBtnClicked(5)">5</button>
+            <button class="btn" name="btn4" onclick= "numBtnClicked(4)">4</button>
+            <button class="btn" name="btnSub" onclick= "optrBtnClicked('-')">-</button><br>
+            </div>
+            <div>
+            <button class="btn" name="btn3" onclick= "numBtnClicked(3)">3</button>
+            <button class="btn" name="btn2" onclick= "numBtnClicked(2)">2</button>
+            <button class="btn" name="btn1" onclick= "numBtnClicked(1)">1</button>
+            <button class="btn" name="btnDiv" onclick= "optrBtnClicked('*')">*</button><br>
+            </div>
+            <div>
+            <button class="btn" name="btnDot" onclick= "numBtnClicked('.')">.</button>
+            <button class="btn" name="btn0" onclick= "numBtnClicked(0)">0</button>
+            <button class="btn" name="btnAns" onclick= "execute()">=</button>
+            <button class="btn" name="btnDiv" onclick= "optrBtnClicked('/')">/</button><br>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
