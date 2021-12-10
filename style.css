@@ -24,7 +24,6 @@ body{
     width:250px;
     height:390px;
     border:4px outset red;
-    transform:translate3d(0,0,-100px);
     
     border-radius:20px;
     box-shadow:5px 5px 40px white,
